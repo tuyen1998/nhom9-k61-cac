@@ -2,14 +2,11 @@
 ---
 
 ## REST Development
-- Là viết tắt của từ Research, Extension and Irrigation Division Holmes
 - Khoảng những năm 1970 xuất hiện 1 giải pháp truyền tin hướng có tên là **RPC**, nó là viết tắt của cụm từ Remote Procedure Calls (tạm dịch là các cuộc gọi thủ tục từ xa).
 - Nhưng nó lại tồn tại rất nhiều vấn đề như:
-
-  1) Không linh hoạt thay đổi kể từ khi nó giả định một mối quan hệ tĩnh giữa máy khách và máy chủ tại thời gian chạy. Điều này gây ra các mã số máy khách và máy chủ được kết chặt chẽ với nhau,
- 2) RPC được dựa trên mô hình lập trình thủ tục / cấu trúc, đó là đã lỗi thời với các mô hình hướng đối tượng,
- 3) RPC thiếu minh bạch vị trí.
-
+1) Không linh hoạt thay đổi kể từ khi nó giả định một mối quan hệ tĩnh giữa máy khách và máy chủ tại thời gian chạy. Điều này gây ra các mã số máy khách và máy chủ được kết chặt chẽ với nhau,
+2) RPC được dựa trên mô hình lập trình thủ tục / cấu trúc, đó là đã lỗi thời với các mô hình hướng đối tượng,
+3) RPC thiếu minh bạch vị trí.
 ---
 
 ## REST Development
@@ -43,7 +40,8 @@
 ---
 
 ## REST Development
-- Các NOUN trong một hệ thống **REST** tương ứng với các nguồn mà hệ thống cho phép truy cập và thao tác, VD: Người sử dụng.
+- Các **NOUN** trong một hệ thống **REST** tương ứng với các nguồn mà hệ thống cho phép truy cập và thao tác, VD: Người sử dụng.
+- **Phương thức:**
 1) Phương thức GET: Sử dụng GET theo cách này rất rõ ràng vì GET chỉ dành cho truy cập dữ liệu. GET không thay đổi giá trị của resource.
 2) Phương thức PUT: Sử dụng để cập nhật dữ liệu của resource. Dữ liệu được cập nhật bằng cách xác định resource bằng URI. Nếu không tồn tại resource sẽ tạo ra một resource mới.
 3) Phương thức DELETE dùng để xóa resource: xóa resource bởi URI.
@@ -73,38 +71,45 @@ phổ biến nhất là JSON, XML và HTML.
 - XML là một định dạng giao hoán cũ hơn, cho phép các đối tượng phức tạp được mô tả trong một trường hợp cực phức tạp
 - JSON được sử dụng trong trường hợp bạn muốn đối tượng phản hồi được phân tích cú pháp trực tiếp trong một trình duyệt web hoặc trong nút, bởi vì mọi đối tượng JSON cũng là một đối tượng JavaScript.
 ---
+
 ## REST Development
-**Giao tiếp phi trạng thái**(stateless communication)
-- **REST**  ám chỉ rằng hoặc là chuyển về resource state, hoặc lưu giữ trên client, server và client không lưu trạng thái của nhau -> mỗi request lên server thì client phải đóng gói thông tin đầy đủ để server hiểu được.
-- Lý do:  số lượng client tương tác sẽ ảnh hưởng nghiêm trọng tới server nếu nó phải giữ state cho client ( về khả năng mở rộng)-> Stateless giúp hệ thống dễ phát triển,bảo trì, mở rộng
+**Giao tiếp phi trạng thái(stateless communication)**
+- **REST**  ám chỉ rằng hoặc là chuyển về resource state, hoặc lưu giữ trên client, server và client không lưu trạng thái của nhau
+-> mỗi request lên server thì client phải đóng gói thông tin đầy đủ để server hiểu được.
+- Lý do:  số lượng client tương tác sẽ ảnh hưởng nghiêm trọng tới server nếu nó phải giữ state cho client ( về khả năng mở rộng)
+-> Stateless giúp hệ thống dễ phát triển,bảo trì, mở rộng
 - Khuyết điểm: gia tăng lượng thông tin cần truyền tải giữa client và server.
-- Khía cạnh quan trọng khác: Hạn chế statelessness cô lập các client đối với những thay đổi trên server vì nó không phụ thuộc vào cuộc call với cùng một server trong hai request liên tiếp.
 ---
+
 ## REST Development
--Một client có thể nhận được một tài liệu có chứa các liên kết từ các máy chủ, và trong khi nó thực hiện một số tiến trình, máy chủ có thể shutdown, đĩa cứng của nó có thể được tách ra và được thay thế, phần mềm có thể được cập nhật và khởi động lại - và nếu client theo dõi một trong các liên kết đã nhận được từ máy chủ, nó sẽ không nhận thấy thông báo
+- Khía cạnh quan trọng khác: Hạn chế statelessness cô lập các client đối với những thay đổi trên server vì nó không phụ thuộc vào cuộc call với cùng một server trong hai request liên tiếp.
+- Một client có thể nhận được một tài liệu có chứa các liên kết từ các máy chủ, và trong khi nó thực hiện một số tiến trình, máy chủ có thể shutdown, đĩa cứng của nó có thể được tách ra và được thay thế, phần mềm có thể được cập nhật và khởi động lại- và nếu client theo dõi một trong các liên kết đã nhận được từ máy chủ, nó sẽ không nhận thấy thông báo
 ---
+
 ## REST Development
 **Chuẩn hóa các interface**: 
-- Đây là một trong những đặc tính quan trọng của hệ thống REST. 
+- Đây là một trong những đặc tính quan trọng của hệ thống **REST**. 
 - Bằng cách tạo ra các quy ước chuẩn để giao tiếp giữa các thành phần trong hệ thống, bạn đã đơn giản hóa việc client có thể tương tác với server.
 - Các quy ước này áp dụng cho toàn bộ các service giúp cho người sử dụng hệ thống của bạn dễ dụng hơn. VD: hệ thống bạn đặt ra 1 chuẩn API để người dùng dù là mobile, web đều có thể kết nối vào được. 
-- Hệ thống REST có yếu điểm ở đây vì khi chuẩn hóa rồi ta không thế tối ưu từng kết nối.-
+- Hệ thống REST có yếu điểm ở đây vì khi chuẩn hóa rồi ta không thế tối ưu từng kết nối.
 ---
+
 ## REST Development
-###Chú ý:
+**Chú ý**:
 - API REST của bạn nên nhỏ để không rò rỉ chi tiết thực hiện nội bộ . Ngoài ra, bạn nên xem xét khả năng sử dụng của chúng để khách hàng có thể sử dụng chúng hiệu quả.
-- Bằng cách thiết kế một API linh hoạt, bạn thực hiện nó như vậy API của bạn có thể được sử dụng bởi nhiều client khác nhau bằng nhiều cách khác nhau-> tăng tính linh hoạt cho client
+- Bằng cách thiết kế một API linh hoạt, bạn thực hiện nó như vậy API của bạn có thể được sử dụng bởi nhiều client khác nhau bằng nhiều cách khác nhau
+-> tăng tính linh hoạt cho client.
 ---
 
 ## COUPLING
-- Kết nối các lớp chương trình khác nhau. Khớp nối(coupling) thực sự là vấn đề trong thực tế bởi vì nó có một ảnh hưởng mạnh mẽ đến cách duy trì và tiến hóa được hệ thống của chúng ta.
+- Kết nối các lớp chương trình khác nhau. Khớp nối (coupling) thực sự là vấn đề trong thực tế bởi vì nó có một ảnh hưởng mạnh mẽ đến cách duy trì và tiến hóa được hệ thống của chúng ta.
 - Bởi vì nếu bạn có một lớp chương trình chặt chẽ cùng với một lớp khác, thực hiện thay đổi đối với lớp đó thường có thể gây ra lỗi trong các lớp khác.
 - Ngoài ra, nếu chúng ta đi sửa lỗi hoặc thêm một tính năng mới vào hệ thống của chúng ta, điều này thường có nghĩa là chúng ta cần phải sửa mã ở nhiều nơi khác nhau, cũng có thể gây ra lỗi ở nhiều nơi khác nhau.
 - Điều này cũng cho thấy một thách thức về sử dụng lại.
 ---
 
 ## COUPLING
--  Ghép nối là một độ đo của độ phụ thuộc lẫn nhau giữa các module trong chương trình máy tính
+-  Ghép nối là một độ đo của độ phụ thuộc lẫn nhau giữa các module trong chương trình máy tính.
 - Các lớp độc lập nhỏ hơn thì tốt hơn nhiều so với các lớp mà tất cả đều kết hợp với nhau chặt chẽ. Vì vậy, nếu bạn đang xem xét một lớp, và bạn nhận ra bạn cũng cần phải nhìn vào nhiều lớp 1 lúc.
 - Đột nhiên, bạn có cả một loạt các trình biên tập mã mở mà làm cho nó thực sự khó khăn để quản lý hệ thống của bạn.
 - Chúng ta muốn giảm thiểu các giao diện tồn tại giữa các yếu tố chương trình khác nhau, giảm thiểu sự phức tạp của các giao diện, để họ chỉ tiết lộ bề mặt tối thiểu đó là yêu cầu cung cấp các chức năng cần thiết.
@@ -120,12 +125,7 @@ phổ biến nhất là JSON, XML và HTML.
 ## COHESION
 - Các lớp gắn kết thường có một tập nhỏ các trường private, và các methord trong lớp sẽ hoạt động trên những mảng đó. Nếu một phương pháp sử dụng nhiều hơn một hoặc thậm chí tất cả các mảng, nó có thể liên kết chặt chẽ với các mục tiêu tổng thể của lớp.
 - Ngược lại, nếu có một phương pháp mà không sử dụng bất kỳ lĩnh vực nào cả, nó có lẽ không liên quan với các mục tiêu tổng thể của lớp, và có lẽ nên được di chuyển ở một nơi khác.
----
-
-## COHESION
 - Điều này dẫn chúng ta đến một số lượng lớn các lớp nhỏ hơn, điều này là tốt bởi vì nó có nghĩa là nhà phát triển có thể di chuyển nhanh chóng trong các lớp họ quan tâm, và giúp cô lập các thay đổi, làm cho nó bảo trì và tiến hóa dễ dàng hơn.
----
-
 ---
 
 ## Design Principles: SOLID
@@ -140,15 +140,13 @@ phổ biến nhất là JSON, XML và HTML.
 - **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
 
 ![alt](https://howtodoinjava.com/wp-content/uploads/solid_class_design_principles.png)
+
 ---
 
 ## Design Principles: SOLID
 - Tính linh hoạt của các hệ thống phần mềm có nghĩa là chúng có thể được thiết kế theo nhiều cách khác nhau.
 - Nhưng muốn hệ thống dễ hiểu,nhanh chóng chẩn đoán và sửa chữa, và chịu trách nhiệm cho sự thay đổi trong tương lai,Khi muốn thêm các tính năng mới.Tất cả các hệ thống bắt đầu theo cách nàyKhi chỉ có một dòng mã, nó rất dễ hiểu, dễ sửa chữa,Và phù hợp với những thay đổi trong tương lai.
 - Nhưng theo thời gian, khi thêm các tính năng mới, sẽ mở rộng thiết kế,Vi phạm thiết kế, làm rõ các tính năng đã có trong đó.
----
-
-## Design Principles: SOLID
 - Và điều này làm cho mã khó hơn và khó hơn để duy trì.
 - Vì vậy, thực sự muốn suy nghĩ về thiết kế .Trong một lên phía trước một cách có chủ ý.Cuối cùng, những gì chúng tôi muốn làm là tìm ra một bộ nguyên tắc thiết kế. Để giúp hướng dẫn chúng tôi đưa ra các quyết định đúng đắn.
 ---
