@@ -36,21 +36,24 @@
 - Các hệ thống dựa trên **REST** có nhiều mức độ về hạn chế kiến trúc.
 - URI cung cấp một cơ chế thực sự đơn giản và minh bạch để đặt tên các dịch vụ **REST** từ xa
 - Các dịch vụ dựa trên **REST** đều sử dụng phương pháp truy cập chuẩn để tham số hóa các yêu cầu được thực hiện từ client đến **REST** server
+
 ![alt](https://cdn-images-1.medium.com/max/599/1*uHzooF1EtgcKn9_XiSST4w.png)
+
 ---
 
 ## REST Development
+- Khi client yêu cầu URI từ xa sử dụng phương thức truy cập, server có lẽ sẽ trả về mô tả của điều bạn yêu cầu. Nhưng nếu họ đưa ra yêu cầu đến cùng một URI nhưng với phương pháp truy cập xóa, server sẽ chạy và xóa tài nguyên đó. Vì vậy bản chất của phương pháp truy cập mà bạn chỉ định cùng với yêu cầu của bạn là vô cùng có ý nghĩa. 
+- Khó khăn kiến trúc tiếp theo là các server dựa trên REST giao tiếp sử dụng các đại diện trung gian.
+- Client không thực sự nhìn thấy đại diện cuối cùng trở lại mà phần còn lại của chúng ta có thể được duy trì. Nó chỉ nhìn thấy định dạng của các tài liệu mà đang được gửi lại cho client trong đại diện trung gian này.
 - Các **NOUN** trong một hệ thống **REST** tương ứng với các nguồn mà hệ thống cho phép truy cập và thao tác, VD: Người sử dụng.
+---
+
+## REST Development
 - **Phương thức:**
 1) Phương thức GET: Sử dụng GET theo cách này rất rõ ràng vì GET chỉ dành cho truy cập dữ liệu. GET không thay đổi giá trị của resource.
 2) Phương thức PUT: Sử dụng để cập nhật dữ liệu của resource. Dữ liệu được cập nhật bằng cách xác định resource bằng URI. Nếu không tồn tại resource sẽ tạo ra một resource mới.
 3) Phương thức DELETE dùng để xóa resource: xóa resource bởi URI.
 4) Phương thức POST: tạo ra một resource mới.
-
-
----
-
-## REST Development
 - Trong các header yêu cầu, có thể đặt thêm metadata như chỉ định loại định dạng phản hồi bạn muốn lấy lại hoặc chỉ định thông tin về người dùng thực hiện yêu cầu hoặc một số loại token ủy quyền.
 - Hầu hết các yêu cầu **REST** nên là idempotent. Điều này có nghĩa là nếu bạn thực hiện cùng một yêu cầu nhiều lần, cùng một hành động sẽ diễn ra. Ngoại lệ cho điều này sẽ được post.
 ---
