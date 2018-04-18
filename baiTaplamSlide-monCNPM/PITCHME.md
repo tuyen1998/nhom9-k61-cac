@@ -1,11 +1,12 @@
 ### THIẾT KẾ CẤP CAO
 ### (HIGH LEVEL DESIGN) (Tiếp)
 ---
-
+<span style="color:gray">
 #### REST Development
 #### COUPLING
 #### COHESION
 #### Design Principles: SOLID
+</span>
 ---
 
 ### REST Development
