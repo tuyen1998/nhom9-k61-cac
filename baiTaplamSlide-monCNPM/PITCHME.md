@@ -2,10 +2,10 @@
 ### (HIGH LEVEL DESIGN) (Tiếp)
 ---
 
-### REST Development
-### COUPLING
-### COHESION
-### Design Principles: SOLID
+#### REST Development
+#### COUPLING
+#### COHESION
+#### Design Principles: SOLID
 ---
 
 ### REST Development
