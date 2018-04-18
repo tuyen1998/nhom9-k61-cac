@@ -40,7 +40,7 @@
 - REST được Roy Fielding phát minh vào những năm 1990
 ---
 
-## REST Development
+### REST Development
 - Thiết kế cốt lõi quyết định REST là:
 
  1) Được lựa chọn để giải quyết nhiều thách thức cơ bản mà hệ thống phần mềm dựa trên web gặp phải,
@@ -50,35 +50,35 @@
  3) Tất cả những thuộc tính này vẫn giữ đúng đối với các hệ thống mà chúng ta hiện đang thiết kế.
 ---
 
-## REST Development
+### REST Development
 - Hệ thống REST hoạt động theo mô hình client- server, trong đó server là tập hợp các service nhỏ lắng nghe các request từ client
 - Với từng request khác nhau thì có thể một hoặc nhiều service xử lý
 - Các hệ thống dựa trên REST có nhiều mức độ về hạn chế kiến trúc
 ---
 
-## REST Development
+### REST Development
 - URI cung cấp một cơ chế đơn giản và minh bạch để đặt tên các dịch vụ REST từ xa
 - Các dịch vụ dựa trên REST đều sử dụng phương pháp truy cập chuẩn để tham số hóa các yêu cầu được thực hiện từ client đến REST server
 ---
 
-## REST Development
+### REST Development
 
 ![alt](https://cdn-images-1.medium.com/max/599/1*uHzooF1EtgcKn9_XiSST4w.png)
 
 ---
 
-## REST Development
+### REST Development
 - Khi client yêu cầu URI từ xa sử dụng phương thức truy cập, server sẽ trả về mô tả của điều người dùng yêu cầu
 - Nhưng nếu họ đưa ra yêu cầu đến cùng một URI với phương pháp truy cập xóa, server sẽ chạy và xóa tài nguyên đó
 ---
 
-## REST Development
+### REST Development
 - Vì vậy bản chất của phương pháp truy cập mà người dùng chỉ định cùng với yêu cầu của họ là vô cùng có ý nghĩa
 - Khó khăn kiến trúc tiếp theo là các server dựa trên REST giao tiếp sử dụng các đại diện trung gian
 - Các NOUN trong một hệ thống REST tương ứng với các nguồn mà hệ thống cho phép truy cập và thao tác, VD: Người sử dụng
 ---
 
-## REST Development
+### REST Development
 - **Phương thức:**
 
  1) Phương thức GET: Sử dụng GET theo cách này rất rõ ràng vì GET chỉ dành cho truy cập dữ liệu. GET không thay đổi giá trị của resource
@@ -90,27 +90,27 @@
  4) Phương thức POST: tạo ra một resource mới.
 ---
 
-## REST Development
+### REST Development
 - Trong các header yêu cầu, có thể đặt thêm metadata như chỉ định loại định dạng phản hồi bạn muốn lấy lại hoặc chỉ định thông tin về người dùng thực hiện yêu cầu hoặc một số loại token ủy quyền
 - Hầu hết các yêu cầu REST nên là idempotent
 ---
 
-## REST Development
+### REST Development
 - Điều này có nghĩa là nếu người dùng thực hiện cùng một yêu cầu nhiều lần, cùng một hành động sẽ diễn ra. Ngoại lệ cho điều này sẽ được post
 - Khi một phản hồi được trả về từ một dịch vụ **REST** lại cho khách hàng, nó chứa hai thành phần chính, phần header và phần thân.
 ---
 
-## REST Development
+### REST Development
 - Header chứa tất cả các loại siêu dữ liệu khác nhau, nhưng một phần quan trọng là mã trạng thái
 - Một danh sách các mã trạng thái chuẩn được sử dụng phổ biến. VD: 200 cho yêu cầu thành công, 404 cho việc không thấy dữ liệu
 ---
 
-## REST Development
+### REST Development
 - Phần dữ liệu phản hồi cũng có thể được trả về dưới nhiều dạng khác nhau phổ biến nhất là JSON, XML và HTML
 - HTML thường được sử dụng trong những tình huống mà ta muốn phản hồi được hiển thị trong một trình duyệt web trực quan
 ---
 
-## REST Development
+### REST Development
 - XML là một định dạng giao hoán cũ hơn, cho phép các đối tượng phức tạp được mô tả trong một trường hợp cực phức tạp
 - JSON được sử dụng trong trường hợp bạn muốn đối tượng phản hồi được phân tích cú pháp trực tiếp trong một trình duyệt web hoặc trong nút, bởi vì mọi đối tượng JSON cũng là một đối tượng JavaScript
 ---
