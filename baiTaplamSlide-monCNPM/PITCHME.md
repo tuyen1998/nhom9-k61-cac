@@ -296,8 +296,8 @@
 - Nếu Interface quá lớn thì nên tách thành các interface nhỏ hơn, với nhiều mục đích cụ thể.
 ---
 
-### Design Principles: SOLID
-**Nguyên tắc tương thích động (DIP)**
+#### Design Principles: SOLID
+- **Nguyên tắc tương thích động (DIP)**
 ![alt](http://slideplayer.com/slide/9027270/27/images/7/Dependency+inversion+principle.jpg)
 
 ---
