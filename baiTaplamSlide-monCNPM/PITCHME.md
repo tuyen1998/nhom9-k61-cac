@@ -80,9 +80,13 @@
 
 ## REST Development
 - **Phương thức:**
- 1) Phương thức GET: Sử dụng GET theo cách này rất rõ ràng vì GET chỉ dành cho truy cập dữ liệu. GET không thay đổi giá trị của resource,
- 2) Phương thức PUT: Sử dụng để cập nhật dữ liệu của resource. Dữ liệu được cập nhật bằng cách xác định resource bằng URI. Nếu không tồn tại resource sẽ tạo ra một resource mới,
- 3) Phương thức DELETE dùng để xóa resource: xóa resource bởi URI,
+
+ 1) Phương thức GET: Sử dụng GET theo cách này rất rõ ràng vì GET chỉ dành cho truy cập dữ liệu. GET không thay đổi giá trị của resource
+ 
+ 2) Phương thức PUT: Sử dụng để cập nhật dữ liệu của resource. Dữ liệu được cập nhật bằng cách xác định resource bằng URI. Nếu không tồn tại resource sẽ tạo ra một resource mới
+ 
+ 3) Phương thức DELETE dùng để xóa resource: xóa resource bởi URI
+ 
  4) Phương thức POST: tạo ra một resource mới.
 ---
 
