@@ -120,88 +120,88 @@
 - JSON được sử dụng trong trường hợp bạn muốn đối tượng phản hồi được phân tích cú pháp trực tiếp trong một trình duyệt web hoặc trong nút, bởi vì mọi đối tượng JSON cũng là một đối tượng JavaScript
 ---
 
-## REST Development
+### REST Development
 **Giao tiếp phi trạng thái (stateless communication)**
 - REST ám chỉ rằng hoặc là chuyển về trạng thái nguồn (resource state), hoặc lưu giữ trên client server và client không lưu trạng thái của nhau
 -> Mỗi yêu cầu (request) lên server thì client phải đóng gói thông tin đầy đủ để server hiểu được
 ---
 
-## REST Development
+### REST Development
 - Lý do: số lượng client tương tác sẽ ảnh hưởng nghiêm trọng tới server nếu nó phải giữ trạng thái (state) cho client (về khả năng mở rộng)
 -> Stateless giúp hệ thống dễ phát triển,bảo trì, mở rộng
 ---
 
-## REST Development
+### REST Development
 - Khuyết điểm: gia tăng lượng thông tin cần truyền tải giữa client và server.
 - Khía cạnh quan trọng khác: Hạn chế stateless cô lập các client đối với những thay đổi trên server vì nó không phụ thuộc vào cuộc gọi với cùng một server trong hai yêu cầu liên tiếp.
 ---
 
-## REST Development
+### REST Development
 - Một client có thể nhận được một tài liệu có chứa các liên kết từ các máy chủ, trong khi nó thực hiện một số tiến trình, máy chủ có thể tắt, đĩa cứng của nó có thể được tách ra và được thay thế, phần mềm có thể được cập nhật và khởi động lại
 - Nếu client theo dõi một trong các liên kết đã nhận được từ máy chủ, nó sẽ không nhận thấy thông báo.
 ---
 
-## REST Development
+### REST Development
 **Chuẩn hóa các interface**
 - Đây là một trong những đặc tính quan trọng của hệ thống REST 
 - Bằng cách tạo ra các quy ước chuẩn để giao tiếp giữa các thành phần trong hệ thống, bạn đã đơn giản hóa việc client có thể tương tác với server.
 ---
 
-## REST Development
+### REST Development
 - Các quy ước này áp dụng cho toàn bộ các service giúp cho người sử dụng hệ thống của bạn dễ dùng hơn. VD: hệ thống bạn đặt ra 1 chuẩn API để người dùng dù là mobile, web đều có thể kết nối vào được. 
 - Hệ thống REST có yếu điểm ở đây vì khi chuẩn hóa rồi ta không thế tối ưu từng kết nối.
 ---
 
-## REST Development
+### REST Development
 **Chú ý**:
 - API REST nên nhỏ để không rò rỉ chi tiết thực hiện nội bộ. Ngoài ra, nên xem xét khả năng sử dụng của chúng để khách hàng có thể sử dụng chúng hiệu quả.
 - Bằng cách thiết kế một API linh hoạt, API của bạn có thể được sử dụng bởi nhiều client khác nhau bằng nhiều cách khác nhau
 -> Tăng tính linh hoạt cho client.
 ---
 
-## COUPLING
+### COUPLING
 - Kết nối các lớp chương trình khác nhau.
 - Khớp nối(coupling) thực sự là vấn đề trong thực tế bởi vì nó có một ảnh hưởng mạnh mẽ đến cách duy trì và tiến hóa hệ thống của chúng ta.
 - Bởi vì nếu bạn có một lớp chương trình chặt chẽ cùng với một lớp khác, thực hiện thay đổi đối với lớp đó thường có thể gây ra lỗi trong các lớp khác.
 ---
 
-## COUPLING
+### COUPLING
 - Ngoài ra, nếu chúng ta đi sửa lỗi hoặc thêm một tính năng mới vào hệ thống của chúng ta, điều này thường có nghĩa là chúng ta cần phải sửa mã ở nhiều nơi khác nhau, cũng có thể gây ra lỗi ở nhiều nơi khác nhau.
 - Điều này cũng cho thấy một thách thức về sử dụng lại.
 ---
 
-## COUPLING
+### COUPLING
 -  Ghép nối là một độ đo của độ phụ thuộc lẫn nhau giữa các module trong chương trình máy tính.
 - Các lớp độc lập nhỏ hơn thì tốt hơn nhiều so với các lớp mà tất cả đều kết hợp với nhau chặt chẽ. Vì vậy, nếu bạn đang xem xét một lớp, và bạn nhận ra bạn cũng cần phải nhìn vào nhiều lớp 1 lúc.
 - Đột nhiên, bạn có cả một loạt các trình biên tập mã mở mà làm cho nó thực sự khó khăn để quản lý hệ thống của bạn.
 ---
 
-## COUPLING
+### COUPLING
 - Chúng ta muốn giảm thiểu các giao diện tồn tại giữa các yếu tố chương trình khác nhau, giảm thiểu sự phức tạp của các giao diện, để họ chỉ tiết lộ bề mặt tối thiểu đó là yêu cầu cung cấp các chức năng cần thiết.
 - Và giảm thiểu càng nhiều càng tốt các ràng buộc kiểm soát dòng tồn tại giữa các mô-đun.
 ---
 
-## COHESION
+### COHESION
 - Sự gắn kết, mà chúng ta đã thấy trước đây, là một các biện pháp chủ yếu để đánh giá mức độ tập liên kết chặt chẽ trách nhiệm của một đơn vị thực hiện (các lớp)
 - Vì vậy, các biện pháp gắn kết là làm thế nào tập trung tốt các phương pháp và các trường trong một lớp.
 ---
 
-## COHESION
+### COHESION
 - Các lớp có độ gắn kết thấp, chịu trách nhiệm cho một loạt các hành động đa dạng. Điều này có thể làm cho nó thực sự khó khăn cho một nhà phát triển để nhìn vào một lớp và thực sự hiểu những gì đang thực hiện.
 - Nó cũng cản trở việc duy trì và phát triển phần mềm.
 ---
 
-## COHESION
+### COHESION
 - Các lớp gắn kết thường có một tập nhỏ các trường private, và các methord trong lớp sẽ hoạt động trên những mảng đó.
 - Nếu một phương pháp sử dụng nhiều hơn một hoặc thậm chí tất cả các mảng, nó có thể liên kết chặt chẽ với các mục tiêu tổng thể của lớp.
 ---
 
-## COHESION
+### COHESION
 - Ngược lại, nếu có một phương pháp mà không sử dụng bất kỳ lĩnh vực nào cả, nó có lẽ không liên quan với các mục tiêu tổng thể của lớp, và có lẽ nên được di chuyển ở một nơi khác.
 - Điều này dẫn chúng ta đến một số lượng lớn các lớp nhỏ hơn, điều này là tốt bởi vì nó có nghĩa là nhà phát triển có thể di chuyển nhanh chóng trong các lớp họ quan tâm, và giúp cô lập các thay đổi, làm cho nó bảo trì và tiến hóa dễ dàng hơn.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 - **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 
 - **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
@@ -213,83 +213,83 @@
 - **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 
 ![alt](https://howtodoinjava.com/wp-content/uploads/solid_class_design_principles.png)
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 - Tính linh hoạt của các hệ thống phần mềm có nghĩa là chúng có thể được thiết kế theo nhiều cách khác nhau.
 - Nhưng muốn hệ thống dễ hiểu, nhanh chóng chẩn đoán và sửa chữa, và chịu trách nhiệm cho sự thay đổi trong tương lai, khi muốn thêm các tính năng mới.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 - Tất cả các hệ thống bắt đầu theo cách này khi chỉ có một dòng mã, nó rất dễ hiểu, dễ sửa chữa,Và phù hợp với những thay đổi trong tương lai.
 - Nhưng theo thời gian, khi thêm các tính năng mới, sẽ mở rộng thiết kế, vi phạm thiết kế, làm rõ các tính năng đã có trong đó.
 - Và điều này làm cho mã khó hơn và khó hơn để duy trì.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 
 ![alt](https://image.slidesharecdn.com/2013aprilmsfagmte-singleresponsibilityprinciple-130427022920-phpapp01/95/the-single-responsibility-principle-3-638.jpg?cb=1367029949)
 
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 - Nguyên tắc duy nhất về trách nhiệm nói là một mô-đun phần mềm nên làm một việc và nên làm tốt.
 - Điều này nghe có vẻ đơn giản, nhưng trên thực tế thường cám dỗ để thêm chức năng mới vào các mô-đun hiện có thay vì tạo các mô-đun mới từ đầu.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 
 - Có một số mẫu thiết kế thực sựgiúp chúng tôi thực thi hoặc cải thiện khả năng mã của chúng tôi tuân theo nguyên tắc trách nhiệm duy nhất.
 - Thứ nhất là mô hình chiến lược, điều này thúc đẩy chúng tahướng tới các thuật toán nhỏ, độc lập.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 - Các mô hình lệnh giúp chúng tôi để trừu tượng các hành động một đối tượng mất từ việc thực hiện nội bộ.
 - Mô hình nhà nước giúp chúng ta trừu tượng đi cách một vật thể cư xử ở các trạng thái khác nhaucó thể thay đổi tự động khi chạy.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
 
 ![alt](https://image.slidesharecdn.com/ppt-120429111617-phpapp01/95/principles-of-object-oriented-class-design-15-728.jpg?cb=1348987975)
 
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
 - Chúng ta nên hạn chế việc chỉnh sửa bên trong một Class hoặc Module có sẵn, thay vào đó hãy xem xét mở rộng chúng.
 - Điều này có nghĩa là các tính năng mới có thể dễ dàng thêm vào một hệ thống mà không thay đổi thực hiện hiện có.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
 - **Hạn chế sửa đổi**: Ta không nên chỉnh sửa source code của một module hoặc class có sẵn, vì sẽ ảnh hưởng tới tính đúng đắn của chương trình.
 - **Ưu tiên mở rộng**: Khi cần thêm tính năng mới, ta nên kế thừa và mở rộng các module/class có sẵn thành các module con lớn hơn.
 - Các module/class con vừa có các đặc tính của lớp cha (đã được kiểm chứng đúng đắn), vừa được bổ sung tính năng mới phù hợp với yêu cầu.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
 
 ![alt](https://image.slidesharecdn.com/oodesignprinciplesheuristics-140808094222-phpapp02/95/oo-design-principles-heuristics-21-638.jpg?cb=1407490990)
 
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
 - Các instance của lớp con có thể thay thế được instance lớp cha mà vẫn đảm bảo tính đúng đắn của chương trình.
 - Nguyên tắc này đảm bảo các instance của lớp con có thể thay thế instance của lớp cha mà chương trình vẫn chạy ổn định, khi mở rộng phần mềm của mình bằng các lớp con kế thừa
 - Đảm bảo rằng các lớp con này có thể chạy được và chạy đúng những functions mà lớp cha đã cung cấp trước đó.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc chia nhỏ Interface (Interface segregation principle (ISP) )**
 
 ![alt](https://image.slidesharecdn.com/oodesignprinciplesslideshare-140515053613-phpapp01/95/objectoriented-design-principles-13-638.jpg?cb=1402624393)
@@ -297,14 +297,14 @@
 - Nếu Interface quá lớn thì nên tách thành các interface nhỏ hơn, với nhiều mục đích cụ thể.
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
 
 ![alt](http://slideplayer.com/slide/9027270/27/images/7/Dependency+inversion+principle.jpg)
 
 ---
 
-## Design Principles: SOLID
+### Design Principles: SOLID
 **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
 - Mỗi thành phần hệ thống (class, module, …) chỉ nên phụ thuộc vào các abstractions
 - Không nên phụ thuộc vào các concretions hoặc implementations cụ thể.
