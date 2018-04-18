@@ -2,10 +2,10 @@
 ### (HIGH LEVEL DESIGN) (Tiếp)
 ---
 
-#### REST Development
-#### COUPLING
-#### COHESION
-#### Design Principles: SOLID
+#### 1) REST Development
+#### 2) COUPLING
+#### 3) COHESION
+#### 4) Design Principles: SOLID
 ---
 
 ### REST Development
@@ -18,7 +18,7 @@
 
  1) Không linh hoạt thay đổi kể từ khi nó giả định một mối quan hệ tĩnh giữa máy khách và máy chủ tại thời gian chạy, điều này gây ra các mã số máy khách và máy chủ được kết chặt chẽ với nhau
  
- 2) RPC được dựa trên mô hình lập trình thủ tục/ cấu trúc, nó đã lỗi thời với các mô hình hướng đối tượng.
+ 2) RPC được dựa trên mô hình lập trình thủ tục/ cấu trúc, nó đã lỗi thời với các mô hình hướng đối tượng
  
  3) RPC thiếu minh bạch vị trí.
  
@@ -31,7 +31,7 @@
 ---
 
 ### REST Development
-- Ở high level design, những gì muốn làm là local machine gửi yêu cầu tới remote service,
+- Ở high level design, những gì muốn làm là local machine gửi yêu cầu tới remote service
 - Và khi yêu cầu được tính toán, nó sẽ được gửi đi và gửi phản hồi trở lại local service mà sau đó có thể đi và hành động để đáp ứng thích hợp.
 ---
 
