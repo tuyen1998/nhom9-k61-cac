@@ -79,7 +79,7 @@
 ---
 
 ### REST Development
-**Phương thức:**
+- **Phương thức:**
 
  1) Phương thức GET: Sử dụng GET theo cách này rất rõ ràng vì GET chỉ dành cho truy cập dữ liệu. GET không thay đổi giá trị của resource
  
