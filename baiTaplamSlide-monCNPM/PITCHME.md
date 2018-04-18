@@ -291,7 +291,6 @@
 
 ### Design Principles: SOLID
 **Nguyên tắc chia nhỏ Interface (Interface segregation principle (ISP) )**
-
 ![alt](https://image.slidesharecdn.com/oodesignprinciplesslideshare-140515053613-phpapp01/95/objectoriented-design-principles-13-638.jpg?cb=1402624393)
 
 - Nếu Interface quá lớn thì nên tách thành các interface nhỏ hơn, với nhiều mục đích cụ thể.
@@ -299,7 +298,6 @@
 
 ### Design Principles: SOLID
 **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
-
 ![alt](http://slideplayer.com/slide/9027270/27/images/7/Dependency+inversion+principle.jpg)
 
 ---
