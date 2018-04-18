@@ -1,8 +1,12 @@
-## THIẾT KẾ CẤP CAO (HIGH LEVEL DESIGN) (Tiếp)
+### THIẾT KẾ CẤP CAO
+### (HIGH LEVEL DESIGN) (Tiếp)
 ---
 
 ### REST Development
 ### COUPLING
+### COHESION
+### Design Principles: SOLID
+---
 
 ### REST Development
 - Khoảng những năm 1970 xuất hiện 1 giải pháp truyền tin hướng có tên là **RPC**.
