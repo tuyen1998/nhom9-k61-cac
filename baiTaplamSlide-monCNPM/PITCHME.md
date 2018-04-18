@@ -216,7 +216,6 @@
 ## Design Principles: SOLID
 
 ![alt](https://howtodoinjava.com/wp-content/uploads/solid_class_design_principles.png)
-
 ---
 
 ## Design Principles: SOLID
