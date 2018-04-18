@@ -15,10 +15,13 @@
 
 ### REST Development
 - Nó tồn tại rất nhiều vấn đề như:
+
 1) Không linh hoạt thay đổi kể từ khi nó giả định một mối quan hệ tĩnh giữa máy khách và máy chủ tại thời gian chạy.
  - Điều này gây ra các mã số máy khách và máy chủ được kết chặt chẽ với nhau,
+ 
 2) RPC được dựa trên mô hình lập trình thủ tục/ cấu trúc,
  - Nó đã lỗi thời với các mô hình hướng đối tượng.
+ 
 3) RPC thiếu minh bạch vị trí.
 ---
 
