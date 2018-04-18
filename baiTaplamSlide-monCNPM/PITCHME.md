@@ -202,14 +202,11 @@
 ---
 
 ### Design Principles: SOLID
+
 - **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
-
 - **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
-
 - **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
-
 - **Nguyên tắc chia nhỏ Interface (Interface segregation principle (ISP) )**
-
 - **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
 ---
 
@@ -297,7 +294,7 @@
 ---
 
 #### Design Principles: SOLID
-- **Nguyên tắc tương thích động (DIP)**
+**Nguyên tắc tương thích động (DIP)**
 ![alt](http://slideplayer.com/slide/9027270/27/images/7/Dependency+inversion+principle.jpg)
 
 ---
