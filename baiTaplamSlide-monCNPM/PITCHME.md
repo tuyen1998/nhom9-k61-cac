@@ -201,14 +201,7 @@
 - Điều này dẫn chúng ta đến một số lượng lớn các lớp nhỏ hơn, điều này là tốt bởi vì nó có nghĩa là nhà phát triển có thể di chuyển nhanh chóng trong các lớp họ quan tâm, và giúp cô lập các thay đổi, làm cho nó bảo trì và tiến hóa dễ dàng hơn.
 ---
 
-### Design Principles: SOLID
 
-- **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
-- **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
-- **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
-- **Nguyên tắc chia nhỏ Interface (Interface segregation principle (ISP) )**
-- **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
----
 
 ### Design Principles: SOLID
 
@@ -216,18 +209,55 @@
 ---
 
 ### Design Principles: SOLID
-- Tính linh hoạt của các hệ thống phần mềm có nghĩa là chúng có thể được thiết kế theo nhiều cách khác nhau.
-- Nhưng muốn hệ thống dễ hiểu, nhanh chóng chẩn đoán và sửa chữa, và chịu trách nhiệm cho sự thay đổi trong tương lai, khi muốn thêm các tính năng mới.
+**Hướng dẫn thiết kế và các dấu hiệu**
+-	Tính linh hoạt của hệ thống là phần mềm là có thể thiết kế theo nhiều cách khác nhau
+**Một số yêu cầu về hệ thống phần mềm**
+-	Cần dễ hiểu
+-	Cần chuẩn đoán và sửa lỗi một cách dễ dàng và nhanh chóng
+-	Đáp ứng được các thay đổi và cải tiến trong tương lai
+
 ---
 
 ### Design Principles: SOLID
-- Tất cả các hệ thống bắt đầu theo cách này khi chỉ có một dòng mã, nó rất dễ hiểu, dễ sửa chữa,Và phù hợp với những thay đổi trong tương lai.
-- Nhưng theo thời gian, khi thêm các tính năng mới, sẽ mở rộng thiết kế, vi phạm thiết kế, làm rõ các tính năng đã có trong đó.
-- Và điều này làm cho mã khó hơn và khó hơn để duy trì.
----
+**Những thiết kế phần mềm kém**
 
+---
 ### Design Principles: SOLID
-**Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
+**Thiết kế cứng nhắc(rigid designing)**
+-	Là thiết kế chống lại sự thay đổi
+-	Là thách thức trong thực tế vì mất nhiều nỗ lực để thay đổi
+-	Xác định các rủi ro trong tương lai khó khăn
+
+---
+### Design Principles: SOLID
+**Thiết kế mong manh(design fragility)**
+-	Phát sinh khi có một thiết kế dễ bị phá vỡ
+-	Tạo ra nhiều giả định khi chạy chương trình
+
+---
+### Design Principles: SOLID
+**Thiết kế bất động(immobility design)**
+-	Các dòng code không độc đáo
+-	Thường được tìm kiếm và sao chép vào trong các hệ thống
+-	Tìm ẩn nhiều rủi ro
+
+---
+### Design Principles: SOLID
+**Thiết kế nhớt(viscous design)**
+-	Dễ vi phạm hơn là tuân tủ các quy tắc thiết kế
+-	Dẫn các nhà phát triển dẫn các hacks vào hệ thống
+
+---
+### Design Principles: SOLID
+S : Nguyên tắc đơn nhiệm( Sinple responsibility princible)
+O: Nguyên tắc mở/đóng(Open/Cloded princible)
+L: Nguyên tắc khả dĩ thay thế(Liskov substitution principle)
+I: Nguyên tắc phân chia giao diện(Interface segragation princible)
+D: Nguyên tắc tương thích động(Dependency inversion principle)
+
+---
+### Design Principles: SOLID
+**Nguyên tắc đơn nhiệm (Simple responsibility princible)**
 
 ![alt](https://image.slidesharecdn.com/2013aprilmsfagmte-singleresponsibilityprinciple-130427022920-phpapp01/95/the-single-responsibility-principle-3-638.jpg?cb=1367029949)
 
@@ -235,33 +265,37 @@
 
 ### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
-- Nguyên tắc duy nhất về trách nhiệm nói là một mô-đun phần mềm nên làm một việc và nên làm tốt.
-- Điều này nghe có vẻ đơn giản, nhưng trên thực tế thường cám dỗ để thêm chức năng mới vào các mô-đun hiện có thay vì tạo các mô-đun mới từ đầu.
+- S : Nguyên tắc đơn nhiệm( sinple responsibility princible)
+Phát biểu: Mỗi 1 modun trong 1 chương trình nên làm một việc và làm tốt việc
+-	Rất quan trong trong thực tế
+Vì nhiều người thường làm nhiều chức năng vào một mô-Đun hơn là tạo ra 1 mô-đun mới
+
 ---
+
 
 ### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 
-- Có một số mẫu thiết kế thực sựgiúp chúng tôi thực thi hoặc cải thiện khả năng mã của chúng tôi tuân theo nguyên tắc trách nhiệm duy nhất.
-- Thứ nhất là mô hình chiến lược, điều này thúc đẩy chúng tahướng tới các thuật toán nhỏ, độc lập.
+-	Một số nguyên tắc giúp tuân thủ theo Ngt đơn nhiệm
+ +	Mô hình chiến lược(the strategy pattarn)
+  =>	Thúc đẩy hướng tới các thuật toán nhỏ, độc lập
++ Mẫu lệnh(command pattarn)
+=>Tóm tắt lại các hành động
++	Mẫu trạng thái(
+=>	Giúp tóm tắt cách 1 đối tượng cư xử trong những trạng thái khác nhau
+
 ---
 
 ### Design Principles: SOLID
-**Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
-- Các mô hình lệnh giúp chúng tôi để trừu tượng các hành động một đối tượng mất từ việc thực hiện nội bộ.
-- Mô hình nhà nước giúp chúng ta trừu tượng đi cách một vật thể cư xử ở các trạng thái khác nhaucó thể thay đổi tự động khi chạy.
----
-
-### Design Principles: SOLID
-**Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
+**Nguyên tắc mở và đóng (Open / Closed principle (OCP) )**
 
 ![alt](https://image.slidesharecdn.com/ppt-120429111617-phpapp01/95/principles-of-object-oriented-class-design-15-728.jpg?cb=1348987975)
 
 ---
 
 ### Design Principles: SOLID
-**Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
-- Chúng ta nên hạn chế việc chỉnh sửa bên trong một Class hoặc Module có sẵn, thay vào đó hãy xem xét mở rộng chúng.
+**Nguyên tắc mở và đóng (Open / Closed principle (OCP) )**
+- Phát biểu:Mỗi hệ thống nên hạn chế việc chỉnh sửa bên trong một Class hoặc Module có sẵn, thay vào đó hãy xem xét mở rộng chúng.
 - Điều này có nghĩa là các tính năng mới có thể dễ dàng thêm vào một hệ thống mà không thay đổi thực hiện hiện có.
 ---
 
@@ -281,18 +315,31 @@
 
 ### Design Principles: SOLID
 **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
-- Các instance của lớp con có thể thay thế được instance lớp cha mà vẫn đảm bảo tính đúng đắn của chương trình.
-- Nguyên tắc này đảm bảo các instance của lớp con có thể thay thế instance của lớp cha mà chương trình vẫn chạy ổn định, khi mở rộng phần mềm của mình bằng các lớp con kế thừa
-- Đảm bảo rằng các lớp con này có thể chạy được và chạy đúng những functions mà lớp cha đã cung cấp trước đó.
+Phát biểu: các thể hiện(instance) của lớp con có thể thay thế được các thể hiển của lớp cha mà nó vẫn giữ nguyên được tính đúng đắn của chương trình.
+-	Khi mở rộng phần mềm bằng bằng các lớp con kế thừa thì cần phải đảm bảo các lớp con có thể chạy được và chạy đúng những chức năng mà các lớp cha đã có.
+
 ---
+### Design Principles: SOLID
+**Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
+Ý nghĩa:
+-	Việc bảo trì và mở rộng được thực hiện dễ dàng
+-	Tránh được một số lỗi ngay khi biên dịch
+
+---
+
 
 ### Design Principles: SOLID
-**Nguyên tắc chia nhỏ Interface (ISP)**
+**Nguyên tắc phân chia giao diện(Interface segragation princible)**
 ![alt](https://image.slidesharecdn.com/oodesignprinciplesslideshare-140515053613-phpapp01/95/objectoriented-design-principles-13-638.jpg?cb=1402624393)
 
-- Nếu Interface quá lớn thì nên tách thành các interface nhỏ hơn, với nhiều mục đích cụ thể.
 ---
+### Design Principles: SOLID
+**Nguyên tắc phân chia giao diện(Interface segragation princible)**
+Phát biểu: 1 chương trình con(client) không nên phụ thuộc vào các phần giao diện và nó không dùng tới.
+-	 Thay vì có 1 giao diện lớn ta nên tách ra thành nhiều phần nhỏ với nhiều mục đích khác nhau
+-	Nguyên tắc này thường hay bị vi phạm vì người phát triển thường không chú trọng tới việc phân tách giao diện
 
+---
 #### Design Principles: SOLID
 **Nguyên tắc tương thích động (DIP)**
 ![alt](http://slideplayer.com/slide/9027270/27/images/7/Dependency+inversion+principle.jpg)
@@ -301,5 +348,8 @@
 
 ### Design Principles: SOLID
 **Nguyên tắc tương thích động (DIP)**
-- Mỗi thành phần hệ thống (class, module, …) chỉ nên phụ thuộc vào các abstractions
-- Không nên phụ thuộc vào các concretions hoặc implementations cụ thể.
+- Phát biểu: Mỗi thành phần của một hệ thống chỉ nên phụ thuộc vào lớp trừu tượng(abstractions), không nên phụ thuộc vào các lớp triển khai(implementations )
+-	Điểm quan trọng: tách riêng các triển khai bằng việc áp các lớp trừu tượng( thường là các lớp giao diện)
+=>	Dễ dàng thay đổi, sửa chữa và sử dụng lại
+=>	Dễ dàng cung cấp các triển khai trong hệ thống
+---
