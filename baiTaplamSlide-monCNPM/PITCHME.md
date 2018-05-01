@@ -186,10 +186,11 @@ phổ biến nhất là JSON, XML và HTML.
 - Điều này dẫn chúng ta đến một số lượng lớn các lớp nhỏ hơn, điều này là tốt bởi vì nó có nghĩa là nhà phát triển có thể di chuyển nhanh chóng trong các lớp họ quan tâm, và giúp cô lập các thay đổi, làm cho nó bảo trì và tiến hóa dễ dàng hơn.
 ---
 
-## Design Principles: SOLID
+## : Design Principles: SOLID
+
 - **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
 
-- **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
+- **Nguyên tắc mở và đóng (Open / Closed principle (OCP) )**
 
 - **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
 
@@ -224,8 +225,8 @@ phổ biến nhất là JSON, XML và HTML.
 
 ## Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
-- Nguyên tắc duy nhất về trách nhiệm nói là một mô-đun phần mềm nên làm một việc và nên làm tốt.
-- Điều này nghe có vẻ đơn giản, nhưng trên thực tế thường cám dỗ để thêm chức năng mới vào các mô-đun hiện có thay vì tạo các mô-đun mới từ đầu.
+- Nguyên tắc đơn nhiệm nói là một mô-đun phần mềm nên làm một việc và nên làm tốt.
+- Điều này nghe có vẻ đơn giản, nhưng trên thực tế thường cám dỗ để thêm chức năng mới vào các mô-đun hiện có thay vì tạo các mô-đun mới từ đầu. 
 ---
 
 ## Design Principles: SOLID
