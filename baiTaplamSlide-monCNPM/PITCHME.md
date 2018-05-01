@@ -203,11 +203,7 @@
 
 ### Design Principles: SOLID
 
-- **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
-- **Nguyên tắc Đóng và Mở (Open / Closed principle (OCP) )**
-- **Nguyên tắc khả dĩ thay thế (Liskov substitution principle (LSP) )**
-- **Nguyên tắc chia nhỏ Interface (Interface segregation principle (ISP) )**
-- **Nguyên tắc tương thích động (Dependency Inversion principle (DIP) )**
+
 ---
 
 ### Design Principles: SOLID
@@ -216,15 +212,64 @@
 ---
 
 ### Design Principles: SOLID
-- Tính linh hoạt của các hệ thống phần mềm có nghĩa là chúng có thể được thiết kế theo nhiều cách khác nhau.
-- Nhưng muốn hệ thống dễ hiểu, nhanh chóng chẩn đoán và sửa chữa, và chịu trách nhiệm cho sự thay đổi trong tương lai, khi muốn thêm các tính năng mới.
+**Hướng dẫn thiết kế và các dấu hiệu**
 ---
 
 ### Design Principles: SOLID
-- Tất cả các hệ thống bắt đầu theo cách này khi chỉ có một dòng mã, nó rất dễ hiểu, dễ sửa chữa,Và phù hợp với những thay đổi trong tương lai.
-- Nhưng theo thời gian, khi thêm các tính năng mới, sẽ mở rộng thiết kế, vi phạm thiết kế, làm rõ các tính năng đã có trong đó.
-- Và điều này làm cho mã khó hơn và khó hơn để duy trì.
+**Hướng dẫn thiết kế và các dấu hiệu**
+-	Tính linh hoạt của hệ thống là phần mềm là có thể thiết kế theo nhiều cách khác nhau
+Một số yêu cầu về hệ thống phần mềm
+-	Cần dễ hiểu
+-	Cần chuẩn đoán và sửa lỗi một cách dễ dàng và nhanh chóng
+-	Đáp ứng được các thay đổi và cải tiến trong tương lai
 ---
+### Design Principles: SOLID
+**Những thiết kế phần mềm kém**
+
+---
+### Design Principles: SOLID
+**Thiết kế cứng nhắc(rigid designing)**
+-	Là thiết kế chống lại sự thay đổi
+-	Là thách thức trong thực tế vì mất nhiều nỗ lực để thay đổi
+-	Xác định các rủi ro trong tương lai khó khăn
+
+---
+### Design Principles: SOLID
+**Thiết kế mong manh(design fragility)**
+-	Phát sinh khi có một thiết kế dễ bị phá vỡ
+-	Tạo ra nhiều giả định khi chạy chương trình
+
+---
+### Design Principles: SOLID
+**Thiết kế cứng nhắc(rigid designing)**
+
+
+---
+### Design Principles: SOLID
+**¬Thiết kế bất động(immobility design)**
+-	Các dòng code không độc đáo
+-	Thường được tìm kiếm và sao chép vào trong các hệ thống
+-	Tìm ẩn nhiều rủi ro
+
+
+---
+### Design Principles: SOLID
+**Thiết kế nhớt(viscous design)**
+-	Dễ vi phạm hơn là tuân tủ các quy tắc thiết kế
+-	Dẫn các nhà phát triển dẫn các hacks vào hệ thống
+
+
+---
+### Design Principles: SOLID
+S : Nguyên tắc đơn nhiệm( Sinple responsibility princible)
+O: Nguyên tắc mở/đóng(Open/Cloded princible)
+L: Nguyên tắc khả dĩ thay thế(Liskov substitution principle)
+I: Nguyên tắc phân chia giao diện(Interface segragation princible)
+D: Nguyên tắc tương thích động(Dependency inversion principle)
+
+
+---
+
 
 ### Design Principles: SOLID
 **Nguyên tắc đơn nhiệm (Simple responcibility princibles)**
